@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Race Results | API Calls</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/racecar-page.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+      <div class="container">
+        <div class="row justify-content-center">
+            <form class="form-inline justify-content-center">
+                <div class="form-group m-5 season">
+                    <label for="season">Season</label>
+                    <input type="text" class="text ml-3" placeholder="Season" id="season">
+                </div>
+                <div class="form-group m-3 round">
+                    <label for="round">Round</label>
+                    <input type="text" class="text ml-3" placeholder="Round" id="round">
+                </div>
+                <button type="button" class="btn btn-info m-3" onclick=getData()>Standings</button>
+            </form>
+        </div>
+        <div class="row justify-content-center">
+            <table class="table table-striped table-dark table-hover justify-content-center">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Position</th>
+                        <th scope="col">Points</th>
+                        <th scope="col">Driver Name</th>
+                        <th scope="col">Driver Nationality</th>
+                        <th scope="col">Sponsor</th>
+                        <th scope="col">More Info</th>
+                    </tr>
+                </thead>
+                <tbody class="justify-content-center">
+                      <tr>
+                          <th scope="row-0">1</th>
+                          <td id="points-0"></td>
+                          <td id="full_name-0"></td>
+                          <td id="driver_nationality-0"></td>
+                          <td id="sponsor-0"></td>
+                          <td id="team_wiki-0"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row-1">2</th>
+                        <td id="points-1"></td>
+                        <td id="full_name-1"></td>
+                        <td id="driver_nationality-1"></td>
+                        <td id="sponsor-1"></td>
+                        <td id="team_wiki-1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row-2">3</th>
+                        <td id="points-2"></td>
+                        <td id="full_name-2"></td>
+                        <td id="driver_nationality-2"></td>
+                        <td id="sponsor-2"></td>
+                        <td id="team_wiki-2"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row-3">4</th>
+                        <td id="points-3"></td>
+                        <td id="full_name-3"></td>
+                        <td id="driver_nationality-3"></td>
+                        <td id="sponsor-3"></td>
+                        <td id="team_wiki-3"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row-4">5</th>
+                        <td id="points-4"></td>
+                        <td id="full_name-4"></td>
+                        <td id="driver_nationality-4"></td>
+                        <td id="sponsor-4"></td>
+                        <td id="team_wiki-4"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row-5">6</th>
+                        <td id="points-5"></td>
+                        <td id="full_name-5"></td>
+                        <td id="driver_nationality-5"></td>
+                        <td id="sponsor-5"></td>
+                        <td id="team_wiki-5"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row-6">7</th>
+                        <td id="points-6"></td>
+                        <td id="full_name-6"></td>
+                        <td id="driver_nationality-6"></td>
+                        <td id="sponsor-6"></td>
+                        <td id="team_wiki-6"></td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div><!--end of table row div-->
+    </div><!--end of container div-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
